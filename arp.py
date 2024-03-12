@@ -1,6 +1,7 @@
 import scapy.all as scp
 import time
 import optparse as opt
+
 def get_mac (ip):
     arp_request = scp.ARP(pdst = ip)
     broadcast = scp.Ether(dst = "ff:ff:ff:ff:ff:ff")
